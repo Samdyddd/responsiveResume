@@ -45,7 +45,7 @@ $(function() {
                         }, k * 100, 'easeInOutExpo');
                     });
 
-                }, 50);
+                }, 10);
 
             }
 

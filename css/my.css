@@ -93,6 +93,10 @@ body a:focus {
     padding-right: 30px!important;
 }
 
+.p-t-35 {
+    padding-top: 35px!important;
+}
+
 .p-t-50 {
     padding-top: 50px !important;
 }
@@ -302,12 +306,12 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 
 .social .tw {
-    background: #33ccff;
+    background: #449D44;
 }
 
 .social .tw:before,
 .social .tw:after {
-    border-color: #33ccff;
+    border-color: #449D44;
 }
 
 .social .gp {
