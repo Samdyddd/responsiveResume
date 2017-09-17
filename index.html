@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="web前端，个人网页简历，web前端开发，网页版简历，响应式模板简历">
+    <meta name="description" content="幸广辉的web前端工程师简历">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>now is good</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/cat.ico">
+
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.css" />
+    <link rel="stylesheet" href="css/my.css" />
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/my.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- 首页 -->
+    <div id="home" class="animate-box">
+        <div class="pageSection text-center">
+            <div class="logo-pic" style="background:url(images/logo-pic2.jpg)">
+            </div>
+            <div class="home-info">
+                <h1><span>幸  广  辉</span></h1>
+                <p class="f-s-20">前端工程师</p>
+            </div>
+            <section class="social">
+                <ul>
+                    <li>
+                        <a href="http://blog.csdn.net/xingguanghui_1134" class="icon fb">
+                            <i class="iconfont icon-csdn1 f-s-20"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Samdyddd" class="icon tw">
+                            <i class="iconfont icon-github f-s-20"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://segmentfault.com/u/samdyddd/notes" class="icon pin">
+                            <i class="iconfont icon-iconsf f-s-20"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://git.oschina.net/3.1415926" class="icon gp">
+                            <i class="iconfont icon-github f-s-20"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <canvas id="myCanvas"></canvas>
+        </div>
+    </div>
+
+    <!-- 导航条 -->
+    <div class="header-nav">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Newcomer</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button>
+                    <h1><a class="navbar-brand" href="index.html"><span>M</span>y resume</a></h1>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li class="hidden">
+                            <a class="   scroll" href="#page-top"></a>
+                        </li>-->
+                        <li><a class="scroll" href="#home">首页</a></li>
+                        <li><a class="scroll" href="#nowtime">现状</a></li>
+                        <li><a class="scroll" href="#experience">工作经历</a></li>
+                        <li><a class="scroll" href="#skill">技能</a></li>
+                        <li><a class="scroll" href="#works">作品</a></li>
+                        <li><a class="scroll" href="#contact">联系我</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--关于我-->
+    <div id="nowtime" class="p-t-50">
+        <div class="container pageSection  animate-box">
+            <div class="row m-b-30">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2>关于我</h2>
+                </div>
+            </div>
+            <div class="row p-0-30">
+                <div class="col-md-3 now-grid">
+                    <div class="now-block ">
+                        <div class="text-center">
+                            <i class="iconfont icon-jiaoyujingli1 f-s-50"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>学历/本科</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 now-grid">
+                    <div class="now-block ">
+                        <div class="text-center">
+                            <i class="iconfont icon-nianling f-s-50"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>年龄/24</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 now-grid">
+                    <div class="now-block ">
+                        <div class="text-center">
+                            <i class="iconfont icon-didian5 f-s-50"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>现居地址/广州</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 now-grid">
+                    <div class="now-block ">
+                        <div class="text-center">
+                            <i class="iconfont icon-zhuangtai f-s-50"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>状态/应届</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"> </div>
+
+            </div>
+
+            <div class="row text-center p-0-30 m-t-30 paragraph">
+                <p>扛过ps，ai，cd，入坑php一年，转战多姿多彩的前端。 </p>
+                <p>信息管理与信息系统 · 广东海洋大学 </p>
+                <p>xghlucky@163.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--工作经历-->
+    <div id="experience" class=" p-0-40 animate-box">
+        <div class="container pageSection">
+            <div class="row m-b-30">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2>经历</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0">
+                    <ul class="timeline">
+                        <li class="timeline-heading text-center animate-box">
+                            <div>
+                                <h3>工作经历</h3>
+                            </div>
+                        </li>
+                        <li class="animate-box timeline-unverted">
+                            <div class="timeline-badge"><i class="iconfont icon-555"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">前端工程师</h3>
+                                    <span class="company">广州金航科技有限公司 - 2010 - 2012</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>使用angular2编写酒店页面模块，前端用户交互。 针对微信公众号平台前端开发，酒店智能控制器界面和数据交互开发。 coreldraw，ps，AI设计公司icon。
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="animate-box timeline-unverted">
+                            <div class="timeline-badge"><i class="iconfont icon-555"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">网页设计师</h3>
+                                    <span class="company">广州莎玛忒公司 - 2016.10 - 2016.12</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>负责官网响应式搭建</p>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <br>
+                        <li class="timeline-heading text-center animate-box">
+                            <div>
+                                <h3>教育经历</h3>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted animate-box">
+                            <div class="timeline-badge"><i class="iconfont icon-jiaoyujingli"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">本科毕业</h3>
+                                    <span class="company">广东海洋大学 - 2013.9 - 2017.6</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>专业是信息管理与信息系统，所学涉及android、java、c++等编程语言。大二自学web设计，深入了解php，转战前端.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--技能和书籍-->
+    <div id="skill">
+        <div class="container pageSection">
+            <div class="row m-b-30">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <h2>技能</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="chart" data-percent="90"><span><strong>HTML5/CSS3</strong>90%</span></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="chart" data-percent="70"><span><strong>jQuery</strong>70%</span></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="chart" data-percent="40"><span><strong>PHP/MySQL</strong>40%</span></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="chart" data-percent="60"><span><strong>AngularJS2</strong>60%</span></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="chart" data-percent="60"><span><strong>nodejs</strong>60%</span></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="chart" data-percent="80"><span><strong>gulp/webpack</strong>80%</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--作品展示-->
+    <div id="works" class="animate-box">
+        <div class="container pageSection">
+            <div class="row m-b-30">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2>作品</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center col-padding animate-box">
+                    <a class="work" style="background-image: url(images/1.png);">
+                        <div class="desc">
+                            <h3>响应式官网</h3>
+                            <span>使用bootstrap框架搭建的响应式企业官网(http://www.gvhis.com.cn/)</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center col-padding animate-box">
+                    <a class="work" style="background-image: url(images/2.jpg);">
+                        <div class="desc">
+                            <h3>串云科技智控界面(微信公众号：串云科技)</h3>
+                            <span>金航信息旗下的酒店微信移动端智控界面，使用c#的Razor框架和前端使用jquery，ajax，websocket实时控制设备。</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center col-padding animate-box">
+                    <a class="work" style="background-image: url(images/4.jpg);">
+                        <div class="desc">
+                            <h3>索特来酒店微信预订前端(微信公众号：索特来酒店)</h3>
+                            <span>js+cshtml和轮播插件，日期插件等的酒店微信预订页面</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center col-padding animate-box">
+                    <a class="work" style="background-image: url(images/3.jpg);">
+                        <div class="desc">
+                            <h3>雅地德酒店微信预定(微信公众号：雅地德酒店)</h3>
+                            <span>微信酒店预定前端页面</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center col-padding animate-box">
+                    <a class="work" style="background-image: url(images/5.gif);background-size:70%;">
+                        <div class="desc">
+                            <h3>count.js插件</h3>
+                            <span>使用原生js编写的一个数字从0到真实数字变化的一个插件。</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center col-padding animate-box">
+                    <a class="work" style="background-image: url(images/6.jpg);">
+                        <div class="desc">
+                            <h3>酒店订餐系统(毕业设计)</h3>
+                            <span>前后端分离，使用angular2作为前端框架，后端使用nodejs,数据库使用MongoDb进行综合开发。前台订餐系统和后台管理系统结合。</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="animate-box">
+        <div class="container pageSection">
+            <div class="row m-b-30">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2>[ 联系我 ]</h2>
+                    <p class="m-t-20"><span>勤奋 ● </span><span>好学 ● </span><span>代码 ● </span><span>梦想</span></p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center paragraph">
+                    <p>学习是一个有汗水亦有快乐的过程。</p>
+                    <p>尤其是出现成果充满了成就感。</p>
+                    <p> 前端是最贴近用户的一个方面。</p>
+                    <p> 学习是相同的，交流更让人进步。</p>
+                    <p> 带上我，看到更大的世界。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="copy-right text-center m-t-30">
+        <p>&copy; 2017 | Design by <a href="javascript:;" style="color:#3a9bdc">xghlucky@163.com</a></p>
+    </div>
+
+</body>
+
+
+</html>
